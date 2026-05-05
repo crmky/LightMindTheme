@@ -52,7 +52,7 @@
 
 ### Mermaid 图表
 
-![image-20260506032844682](./preview/Mermaid 图表.png)
+![image-20260506032844682](./preview/Mermaid图表.png)
 
 ---
 
