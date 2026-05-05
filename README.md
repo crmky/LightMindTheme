@@ -12,11 +12,11 @@
 
 - **Lightmind**（`lightmind.css`）— 暖米色纸面 + 深森林强调色
 
-  ![image-20260506032055867](D:\Work\theme\preview\亮色主题.png)
+  ![image-20260506032055867](.\preview\亮色主题.png)
 
 - **Lightmind Dark**（`lightmind-dark.css`）— 深森林夜底 + 加亮绿色强调，代码块仍用同一深海军蓝
 
-  ![image-20260506032135237](D:\Work\theme\preview\暗色主题.png)
+  ![image-20260506032135237](.\preview\暗色主题.png)
 
 > ⚠️ **仅在 Windows（Typora 1.13.4）上测试通过。** macOS 与 Linux **未经测试**。理论上应该能正常工作（Typora 是 Electron 的，CSS 跨平台），但字体渲染、侧边栏度量、阴影表现可能略有差异。如有问题欢迎反馈或 PR。
 
@@ -24,35 +24,35 @@
 
 ### 标题及正文
 
-![image-20260506031837359](D:\Work\theme\preview\标题和正文.png)
+![image-20260506031837359](.\preview\标题和正文.png)
 
 ### 段落与行内格式
 
-![image-20260506032249205](D:\Work\theme\preview\段落与行内格式.png)
+![image-20260506032249205](.\preview\段落与行内格式.png)
 
 ### 引用与警告块
 
-![image-20260506032350537](D:\Work\theme\preview\引用与警告块.png)
+![image-20260506032350537](.\preview\引用与警告块.png)
 
 ### 列表
 
-![image-20260506032436214](D:\Work\theme\preview\列表.png)
+![image-20260506032436214](.\preview\列表.png)
 
 ### 表格
 
-![image-20260506032510951](D:\Work\theme\preview\表格.png)
+![image-20260506032510951](.\preview\表格.png)
 
 ### 代码
 
-![image-20260506032603502](D:\Work\theme\preview\代码.png)
+![image-20260506032603502](.\preview\代码.png)
 
 ### 数学公式
 
-![image-20260506032741002](D:\Work\theme\preview\数学公式.png)
+![image-20260506032741002](.\preview\数学公式.png)
 
 ### Mermaid 图表
 
-![image-20260506032844682](D:\Work\theme\preview\Mermaid 图表.png)
+![image-20260506032844682](.\preview\Mermaid 图表.png)
 
 ---
 

@@ -12,11 +12,11 @@ Two variants are included:
 
 - **Lightmind** (`lightmind.css`) — warm cream paper with deep forest accents
 
-  ![image-20260506033058483](D:\Work\theme\preview\light.png)
+  ![image-20260506033058483](.\preview\light.png)
 
 - **Lightmind Dark** (`lightmind-dark.css`) — dark forest night with brighter green accents and the same navy code blocks
 
-  ![image-20260506033145242](D:\Work\theme\preview\dark.png)
+  ![image-20260506033145242](.\preview\dark.png)
 
 > ⚠️ **Tested only on Windows (Typora 1.13.4).** macOS and Linux **have not been tested**. Most things should work — Typora's renderer is consistent across platforms — but font rendering, sidebar metrics, and shadow rendering may differ. Reports / PRs welcome.
 
@@ -24,35 +24,35 @@ Two variants are included:
 
 ### Head and body text
 
-![image-20260506033325163](D:\Work\theme\preview\head.png)
+![image-20260506033325163](.\preview\head.png)
 
 ### Paragraph & Inline Formatting
 
-![image-20260506033415532](D:\Work\theme\preview\paragraph.png)
+![image-20260506033415532](.\preview\paragraph.png)
 
 ### Blockquotes & Alerts
 
-![image-20260506033511055](D:\Work\theme\preview\blockquotes.png)
+![image-20260506033511055](.\preview\blockquotes.png)
 
 ### Lists
 
-![image-20260506033604654](D:\Work\theme\preview\lists.png)
+![image-20260506033604654](.\preview\lists.png)
 
 ### Tables
 
-![image-20260506033844924](D:\Work\theme\preview\tables.png)
+![image-20260506033844924](.\preview\tables.png)
 
 ### Code
 
-![image-20260506033919956](D:\Work\theme\preview\code.png)
+![image-20260506033919956](.\preview\code.png)
 
 ### Math
 
-![image-20260506034005871](D:\Work\theme\preview\math.png)
+![image-20260506034005871](.\preview\math.png)
 
 ### Mermaid Diagrams
 
-![image-20260506034034349](D:\Work\theme\preview\mermaid.png)
+![image-20260506034034349](.\preview\mermaid.png)
 
 ---
 
