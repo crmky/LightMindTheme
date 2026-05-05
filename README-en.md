@@ -11,11 +11,50 @@ A lightweight Typora theme designed for long-form writing in mixed Chinese/Engli
 Two variants are included:
 
 - **Lightmind** (`lightmind.css`) — warm cream paper with deep forest accents
+
+  ![image-20260506033058483](D:\Work\theme\preview\light.png)
+
 - **Lightmind Dark** (`lightmind-dark.css`) — dark forest night with brighter green accents and the same navy code blocks
+
+  ![image-20260506033145242](D:\Work\theme\preview\dark.png)
 
 > ⚠️ **Tested only on Windows (Typora 1.13.4).** macOS and Linux **have not been tested**. Most things should work — Typora's renderer is consistent across platforms — but font rendering, sidebar metrics, and shadow rendering may differ. Reports / PRs welcome.
 
 ## Preview
+
+### Head and body text
+
+![image-20260506033325163](D:\Work\theme\preview\head.png)
+
+### Paragraph & Inline Formatting
+
+![image-20260506033415532](D:\Work\theme\preview\paragraph.png)
+
+### Blockquotes & Alerts
+
+![image-20260506033511055](D:\Work\theme\preview\blockquotes.png)
+
+### Lists
+
+![image-20260506033604654](D:\Work\theme\preview\lists.png)
+
+### Tables
+
+![image-20260506033844924](D:\Work\theme\preview\tables.png)
+
+### Code
+
+![image-20260506033919956](D:\Work\theme\preview\code.png)
+
+### Math
+
+![image-20260506034005871](D:\Work\theme\preview\math.png)
+
+### Mermaid Diagrams
+
+![image-20260506034034349](D:\Work\theme\preview\mermaid.png)
+
+---
 
 See [`showcase-en.md`](./showcase/showcase-en.md) (English) or [`showcase.md`](./showcase/showcase-zh.md) (Chinese) for a full demo of every Markdown element rendered under this theme.
 
