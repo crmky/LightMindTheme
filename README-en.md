@@ -1,6 +1,6 @@
 # Lightmind
 
-> A calm, mountain-inspired Typora theme — forest greens, cream paper, deep-navy code. Light **and** dark.
+> A calm, mountain-inspired Typora theme — forest greens, cream paper, deep-navy code. **Light** and **Dark**.
 
 **[中文版 README →](./README.md)**
 
