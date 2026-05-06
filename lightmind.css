@@ -36,7 +36,7 @@
     --code-line: #3a4253;
     --code-gutter: #6b7488;
 
-    /* 语法配色（参考图 2 — 深底紫色关键字）*/
+    /* 语法配色（参考 One Dark 调色板）*/
     --cm-keyword: #d55fde; /* public / void / if / return 关键字 */
     --cm-type: #e5c07b; /* 类型名（如 DialogueManager） */
     --cm-string: #89ca78;
@@ -94,7 +94,7 @@ body {
 }
 
 #write {
-    max-width: max-content;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 48px 56px 96px 56px;
     font-size: 18px;
@@ -721,9 +721,23 @@ footer {
 }
 
 /* 第 2 步：只给最外层元素（foreignObject 的直接子元素 / body 包装）加主题框 */
-#write .md-diagram-panel .edgeLabel foreignObject > *:not(.labelBkg):not(:empty),
-#write .md-diagram-panel .edgeLabel foreignObject > body > *:not(.labelBkg):not(:empty),
-#write .md-diagram-panel .edgeLabel foreignObject > div > *:not(.labelBkg):not(:empty) {
+#write
+    .md-diagram-panel
+    .edgeLabel
+    foreignObject
+    > *:not(.labelBkg):not(:empty),
+#write
+    .md-diagram-panel
+    .edgeLabel
+    foreignObject
+    > body
+    > *:not(.labelBkg):not(:empty),
+#write
+    .md-diagram-panel
+    .edgeLabel
+    foreignObject
+    > div
+    > *:not(.labelBkg):not(:empty) {
     background: var(--bg-write) !important;
     border: 1.2px solid var(--accent) !important;
     border-radius: 5px !important;
@@ -1104,7 +1118,11 @@ footer {
 /* 所有非根节点节区文字 — 米白色，在彩色底上可读 */
 #write .md-diagram-panel g[class*="section-"]:not(.section-root) text,
 #write .md-diagram-panel g[class*="section-"]:not(.section-root) .nodeLabel,
-#write .md-diagram-panel g[class*="section-"]:not(.section-root) foreignObject * {
+#write
+    .md-diagram-panel
+    g[class*="section-"]:not(.section-root)
+    foreignObject
+    * {
     fill: var(--bg-write) !important;
     color: var(--bg-write) !important;
     font-family: var(--font-body) !important;
@@ -1176,7 +1194,8 @@ footer {
 }
 
 /* ---------- Git 图 (gitGraph) ---------- */
-/* 分支调色板 — 8 个分支对应森林绿族 + 主题色。用复合选择器 .branch.branchN + !important 压过 mermaid 内嵌的 `#mermaidChartN .branch { stroke: #333; stroke-dasharray: 2; }` */ #write .md-diagram-panel line.branch.branch0,
+/* 分支调色板 — 8 个分支对应森林绿族 + 主题色。用复合选择器 .branch.branchN + !important 压过 mermaid 内嵌的 `#mermaidChartN .branch { stroke: #333; stroke-dasharray: 2; }` */
+#write .md-diagram-panel line.branch.branch0,
 #write .md-diagram-panel line.branch.branch0 {
     stroke: #2f5a40 !important;
     stroke-dasharray: none !important;
@@ -1451,75 +1470,127 @@ footer {
 /* ---------- 用户旅程图 (Journey) ---------- */
 /* journey 节区头条（标着 "Go to work" / "Go home" 之类）。
    mermaid 给的 inline fill="#191970" / "#8B008B"，按 section-type 覆盖 */
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.journey-section.section-type-0 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.journey-section.section-type-0 {
     fill: #2f5a40 !important;
     stroke: #1a3324 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.journey-section.section-type-1 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.journey-section.section-type-1 {
     fill: #4a7c59 !important;
     stroke: #2f5a40 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.journey-section.section-type-2 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.journey-section.section-type-2 {
     fill: #c2a878 !important;
     stroke: #876e44 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.journey-section.section-type-3 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.journey-section.section-type-3 {
     fill: #4a8fc4 !important;
     stroke: #2c5e87 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.journey-section.section-type-4 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.journey-section.section-type-4 {
     fill: #8b5fbf !important;
     stroke: #5a3d80 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.journey-section.section-type-5 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.journey-section.section-type-5 {
     fill: #c8943a !important;
     stroke: #8a6422 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.journey-section.section-type-6 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.journey-section.section-type-6 {
     fill: #c4564a !important;
     stroke: #8a3a31 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.journey-section.section-type-7 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.journey-section.section-type-7 {
     fill: #6b7a6f !important;
     stroke: #4a554d !important;
 }
 
 /* 节区下的任务条 — 与所属节区同色族 */
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.task.task-type-0 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.task.task-type-0 {
     fill: #2f5a40 !important;
     stroke: #1a3324 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.task.task-type-1 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.task.task-type-1 {
     fill: #4a7c59 !important;
     stroke: #2f5a40 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.task.task-type-2 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.task.task-type-2 {
     fill: #c2a878 !important;
     stroke: #876e44 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.task.task-type-3 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.task.task-type-3 {
     fill: #4a8fc4 !important;
     stroke: #2c5e87 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.task.task-type-4 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.task.task-type-4 {
     fill: #8b5fbf !important;
     stroke: #5a3d80 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.task.task-type-5 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.task.task-type-5 {
     fill: #c8943a !important;
     stroke: #8a6422 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.task.task-type-6 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.task.task-type-6 {
     fill: #c4564a !important;
     stroke: #8a3a31 !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] rect.task.task-type-7 {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    rect.task.task-type-7 {
     fill: #6b7a6f !important;
     stroke: #4a554d !important;
 }
 
 /* 节区 / 任务标签（用 foreignObject HTML 渲染）— 彩色条上的白字 */
-#write .md-diagram-panel svg[aria-roledescription="journey"] foreignObject .label,
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    foreignObject
+    .label,
 #write .md-diagram-panel svg[aria-roledescription="journey"] foreignObject div {
     color: var(--bg-write) !important;
     font-family: var(--font-body) !important;
@@ -1527,7 +1598,10 @@ footer {
 }
 /* SVG <text> 兜底（不支持 foreignObject 时）*/
 #write .md-diagram-panel svg[aria-roledescription="journey"] text.task,
-#write .md-diagram-panel svg[aria-roledescription="journey"] text.journey-section {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    text.journey-section {
     fill: var(--bg-write) !important;
     font-family: var(--font-body) !important;
     font-weight: 600 !important;
@@ -1550,7 +1624,11 @@ footer {
     stroke: var(--accent-deep) !important;
     fill: var(--accent-deep) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] g circle[fill="#666"] {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    g
+    circle[fill="#666"] {
     fill: var(--accent-deep) !important;
     stroke: var(--accent-deep) !important;
 }
@@ -1584,7 +1662,10 @@ footer {
 }
 
 /* 图表顶部标题 */
-#write .md-diagram-panel svg[aria-roledescription="journey"] > text[font-weight="bold"] {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    > text[font-weight="bold"] {
     fill: var(--fg-heading) !important;
     font-family: var(--font-body) !important;
 }
@@ -1593,7 +1674,11 @@ footer {
 #write .md-diagram-panel svg[aria-roledescription="journey"] line[marker-end] {
     stroke: var(--accent-deep) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="journey"] marker#arrowhead path {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="journey"]
+    marker#arrowhead
+    path {
     fill: var(--accent-deep) !important;
 }
 
@@ -1609,28 +1694,60 @@ footer {
 }
 
 /* 用 nth-of-type 让块在主题调色板上循环，形成视觉对比 */
-#write .md-diagram-panel svg[aria-roledescription="packet"] g rect:nth-of-type(8n + 1) {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="packet"]
+    g
+    rect:nth-of-type(8n + 1) {
     fill: rgba(47, 90, 64, 0.15) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="packet"] g rect:nth-of-type(8n + 2) {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="packet"]
+    g
+    rect:nth-of-type(8n + 2) {
     fill: rgba(74, 124, 89, 0.15) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="packet"] g rect:nth-of-type(8n + 3) {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="packet"]
+    g
+    rect:nth-of-type(8n + 3) {
     fill: rgba(125, 186, 139, 0.2) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="packet"] g rect:nth-of-type(8n + 4) {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="packet"]
+    g
+    rect:nth-of-type(8n + 4) {
     fill: rgba(143, 179, 155, 0.2) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="packet"] g rect:nth-of-type(8n + 5) {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="packet"]
+    g
+    rect:nth-of-type(8n + 5) {
     fill: rgba(194, 168, 120, 0.2) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="packet"] g rect:nth-of-type(8n + 6) {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="packet"]
+    g
+    rect:nth-of-type(8n + 6) {
     fill: rgba(139, 95, 191, 0.15) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="packet"] g rect:nth-of-type(8n + 7) {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="packet"]
+    g
+    rect:nth-of-type(8n + 7) {
     fill: rgba(74, 143, 196, 0.15) !important;
 }
-#write .md-diagram-panel svg[aria-roledescription="packet"] g rect:nth-of-type(8n) {
+#write
+    .md-diagram-panel
+    svg[aria-roledescription="packet"]
+    g
+    rect:nth-of-type(8n) {
     fill: rgba(196, 86, 74, 0.15) !important;
 }
 
@@ -2534,7 +2651,8 @@ footer {
     color: var(--fg-heading) !important;
 }
 
-/* CJK inside MathJax — fall back to LXGW WenKai so 中文 in \text {} matches body */ #write .MathJax text,
+/* CJK inside MathJax — fall back to LXGW WenKai so 中文 in \text {} matches body */
+#write .MathJax text,
 #write .MathJax_SVG text,
 #write .MathJax_Display text,
 #write .md-math-block text,
