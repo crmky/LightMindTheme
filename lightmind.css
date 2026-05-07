@@ -2770,7 +2770,24 @@ footer {
 }
 
 /* 打印 / 导出微调 */
+/* 让页眉和页脚的背景色与正文一致，避免出现两层米色色差 */
+.typora-export,
+.typora-export-content,
+html.typora-export {
+    --bg-page: var(--bg-write) !important;
+}
+
+/* PDF 导出时让页面与内容同色，避免出现两层米色色差 */
 @media print {
+    html,
+    body,
+    #write,
+    .typora-export,
+    .typora-export-content,
+    .typora-export #write {
+        background: var(--bg-write) !important;
+        background-color: var(--bg-write) !important;
+    }
     #write {
         box-shadow: none;
         max-width: none;
