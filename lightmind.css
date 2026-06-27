@@ -532,7 +532,7 @@ footer {
 /* 把代码往右推，让它远离 gutter 分隔线（分隔线本身不动）*/
 #write .md-fences .CodeMirror-line,
 #write pre.CodeMirror-line {
-    padding-left: 14px !important;
+    padding-left: 6px !important;
 }
 
 .md-fences .CodeMirror-cursor,
