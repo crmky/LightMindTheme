@@ -321,6 +321,11 @@ footer {
     font-style: italic;
 }
 
+#write u,
+#write .md-underline {
+    text-underline-offset: 2px;
+}
+
 #write a {
     color: var(--accent);
     text-decoration: none;
@@ -2452,7 +2457,7 @@ footer {
 #write .md-task-list-item input[type="checkbox"] {
     position: absolute;
     left: 0;
-    top: 0.14em;
+    top: 0.33em;
     width: 1.3em;
     height: 1.3em;
     appearance: none;
