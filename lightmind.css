@@ -321,6 +321,11 @@ footer {
     font-style: italic;
 }
 
+#write u,
+#write .md-underline {
+    text-underline-offset: 2px;
+}
+
 #write a {
     color: var(--accent);
     text-decoration: none;
